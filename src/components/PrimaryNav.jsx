@@ -19,7 +19,7 @@ const LINKS = [
   { name: "ENS", path: "/" },
   { name: "Event Driven", path: "/" },
   { name: "Risk Manager", path: "/" },
-  { name: "Benis Runner", path: "/benis-runner" },
+  // { name: "Benis Runner", path: "/benis-runner" },
 ];
 
 const PrimaryNav = () => {
@@ -34,6 +34,9 @@ const PrimaryNav = () => {
             <NavLink to={link.path} >{link.name}</NavLink>
           </Link>
         ))}
+          <Link>
+            <NavLink to="/benis-runner" >Benis Runner <img src="/new.gif" width="50" style={{marginLeft:"5px"}}/></NavLink>
+          </Link>
       </Links>
     </Container>
   );
