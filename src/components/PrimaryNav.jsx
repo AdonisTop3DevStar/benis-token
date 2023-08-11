@@ -35,7 +35,7 @@ const PrimaryNav = () => {
           </Link>
         ))}
           <Link>
-            <NavLink to="/benis-runner" style={{position:"absolute", right:"0", bottom:"-30%"}}>Benis Runner <img src="/new.gif" width="20" style={{marginLeft:"5px"}}/></NavLink>
+            <NavLink to="/benis-runner" >Benis Runner <img src="/new.gif" width="20" style={{marginLeft:"5px"}}/></NavLink>
           </Link>
       </Links>
     </Container>
