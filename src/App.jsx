@@ -7,19 +7,20 @@ import Meme from "./components/Meme";
 import Footer from "./components/Footer";
 import FunnyPics from "./components/FunnyPics";
 import { ToggleProvider } from "./context/toggleContext";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import { BrunnerPage } from "./pages/BrunnerPage";
 
 function App() {
   return (
-    <ToggleProvider>
-      <Navbar />
-      <Main>
-        <Hero />
-        <About />
-        <Meme />
-        {/* <FunnyPics /> */}
-      </Main>
-      <Footer />
-    </ToggleProvider>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage/>}/>
+          <Route path="/benis-runner" element={<BrunnerPage/>}/>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

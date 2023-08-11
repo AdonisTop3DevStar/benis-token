@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import { useContext } from "react";
 import { ToggleContext } from "../context/toggleContext";
+import { NavLink } from "react-router-dom";
 
 const LINKS = [
   { name: "Feeless Locker", path: "" },
@@ -18,6 +19,7 @@ const LINKS = [
   { name: "ENS", path: "/" },
   { name: "Event Driven", path: "/" },
   { name: "Risk Manager", path: "/" },
+  { name: "Benis Runner", path: "/benis-runner" },
 ];
 
 const PrimaryNav = () => {
@@ -29,7 +31,7 @@ const PrimaryNav = () => {
       <Links>
         {LINKS.map((link, index) => (
           <Link key={`${index}`}>
-            <a href={"/"}>{link.name}</a>
+            <NavLink to={link.path} >{link.name}</NavLink>
           </Link>
         ))}
       </Links>
