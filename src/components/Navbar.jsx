@@ -16,7 +16,6 @@ const NavData = [
   { name: "Telegram", path: "https://t.me/benis_token", color: "#000", bg: "#E64949" },
   { name: "Reddit", path: "https://reddit.com", color: "#000", bg: "#F00" },
   { name: "Merch", path: "#", color: "#000", bg: "#935335" },
-  { name: "Merch", path: "#", color: "#000", bg: "#935335" },
 ];
 
 const Navbar = () => {

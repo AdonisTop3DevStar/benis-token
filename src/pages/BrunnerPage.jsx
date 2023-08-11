@@ -6,7 +6,7 @@ export function BrunnerPage() {
     return (
         <ToggleProvider>
             <Navbar/>
-            sdfasdlfkjasdflksajfl;aksjdflas;kj
+            <iframe src="/runner/index.html" width="100%" height="300"/>
             <Footer/>
         </ToggleProvider>
     )
