@@ -6,9 +6,7 @@ export function BrunnerPage() {
     return (
         <ToggleProvider>
             <Navbar/>
-            <Main>
-                sdfasflsakjflkasjflaskjfasl;fkjsaf;lk
-            </Main>
+            sdfasdlfkjasdflksajfl;aksjdflas;kj
             <Footer/>
         </ToggleProvider>
     )
